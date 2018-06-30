@@ -67,7 +67,7 @@ $primary_color: #686868;
 $alt_primary_color: #666666;
 $accent_color: #666666;
 @if $color == 'ruby' { $primary_color: #F0544C; $alt_primary_color: #FF615A; $accent_color: #FF626C; }
-@if $color == 'doder' { $primary_color: #4285F4; $alt_primary_color: #03a9f4; $accent_color: #18b8ff; }
+@if $color == 'doder' { $primary_color: #6ba4e7; $alt_primary_color: #03a9f4; $accent_color: #18b8ff; }
 @if $color == 'beryl' { $primary_color: #2EB398; $alt_primary_color: #1eba9b; $accent_color: #0fd1ab; }
 
 @if $color == 'black' { 

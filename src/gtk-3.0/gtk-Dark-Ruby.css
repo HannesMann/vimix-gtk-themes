@@ -658,20 +658,14 @@ button.text-button.image-button image:not(:only-child):last-child {
   margin-right: 4px;
 }
 
-toolbar .linked > button, actionbar > revealer > box .linked > button:not(.suggested-action):not(.destructive-action):not(.server-list-button), .app-notification .linked > button,
-toolbar .linked.vertical > button,
-actionbar > revealer > box .linked.vertical > button:not(.suggested-action):not(.destructive-action):not(.server-list-button),
-.app-notification .linked.vertical > button, .linked >
+toolbar .linked > button, actionbar > revealer > box .linked > button:not(.suggested-action):not(.destructive-action):not(.server-list-button), .app-notification .linked > button, toolbar .linked.vertical > button, actionbar > revealer > box .linked.vertical > button:not(.suggested-action):not(.destructive-action):not(.server-list-button), .app-notification .linked.vertical > button, .linked >
 button.flat,
 .linked.vertical >
 button.flat {
   border-radius: 3px;
 }
 
-toolbar .linked > button.image-button, actionbar > revealer > box .linked > button.image-button:not(.suggested-action):not(.destructive-action):not(.server-list-button), .app-notification .linked > button.image-button,
-toolbar .linked.vertical > button.image-button,
-actionbar > revealer > box .linked.vertical > button.image-button:not(.suggested-action):not(.destructive-action):not(.server-list-button),
-.app-notification .linked.vertical > button.image-button, .linked >
+toolbar .linked > button.image-button, actionbar > revealer > box .linked > button.image-button:not(.suggested-action):not(.destructive-action):not(.server-list-button), .app-notification .linked > button.image-button, toolbar .linked.vertical > button.image-button, actionbar > revealer > box .linked.vertical > button.image-button:not(.suggested-action):not(.destructive-action):not(.server-list-button), .app-notification .linked.vertical > button.image-button, .linked >
 button.flat.image-button,
 .linked.vertical >
 button.flat.image-button {
@@ -679,10 +673,7 @@ button.flat.image-button {
   -gtk-outline-radius: 3px;
 }
 
-toolbar .linked > button.text-button.image-button, actionbar > revealer > box .linked > button.text-button.image-button:not(.suggested-action):not(.destructive-action):not(.server-list-button), .app-notification .linked > button.text-button.image-button,
-toolbar .linked.vertical > button.text-button.image-button,
-actionbar > revealer > box .linked.vertical > button.text-button.image-button:not(.suggested-action):not(.destructive-action):not(.server-list-button),
-.app-notification .linked.vertical > button.text-button.image-button, .linked >
+toolbar .linked > button.text-button.image-button, actionbar > revealer > box .linked > button.text-button.image-button:not(.suggested-action):not(.destructive-action):not(.server-list-button), .app-notification .linked > button.text-button.image-button, toolbar .linked.vertical > button.text-button.image-button, actionbar > revealer > box .linked.vertical > button.text-button.image-button:not(.suggested-action):not(.destructive-action):not(.server-list-button), .app-notification .linked.vertical > button.text-button.image-button, .linked >
 button.flat.text-button.image-button,
 .linked.vertical >
 button.flat.text-button.image-button {
@@ -4428,116 +4419,6 @@ entry selection:disabled, modelbutton.flat:disabled:selected,
 /*****************
  * Title buttons *
  *****************/
-headerbar button.titlebutton:hover, .titlebar button.titlebutton:hover {
-  transition-duration: 0.1s;
-}
-
-headerbar button.titlebutton.close, .titlebar button.titlebutton.close, headerbar button.titlebutton.maximize, .titlebar button.titlebutton.maximize, headerbar button.titlebutton.minimize, .titlebar button.titlebutton.minimize, headerbar button.titlebutton.restore, .titlebar button.titlebutton.restore {
-  margin: 0;
-  padding: 0;
-  min-width: 26px;
-  min-height: 26px;
-  animation: none;
-  box-shadow: none;
-  border: none;
-  color: transparent;
-  background-color: transparent;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-headerbar button.titlebutton.close:backdrop, .titlebar button.titlebutton.close:backdrop, headerbar button.titlebutton.maximize:backdrop, .titlebar button.titlebutton.maximize:backdrop, headerbar button.titlebutton.minimize:backdrop, .titlebar button.titlebutton.minimize:backdrop, headerbar button.titlebutton.restore:backdrop, .titlebar button.titlebutton.restore:backdrop {
-  opacity: 1;
-}
-
-headerbar button.titlebutton.close, .titlebar button.titlebutton.close {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-close-dark.png"), url("windows-assets/titlebutton-close-dark@2.png"));
-}
-
-headerbar button.titlebutton.close:backdrop, .titlebar button.titlebutton.close:backdrop {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-close-backdrop-dark.png"), url("windows-assets/titlebutton-close-backdrop-dark@2.png"));
-}
-
-headerbar button.titlebutton.close:hover, .titlebar button.titlebutton.close:hover {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-close-hover-dark.png"), url("windows-assets/titlebutton-close-hover-dark@2.png"));
-}
-
-headerbar button.titlebutton.close:active, .titlebar button.titlebutton.close:active {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-close-active-dark.png"), url("windows-assets/titlebutton-close-active-dark@2.png"));
-}
-
-headerbar button.titlebutton.maximize, .titlebar button.titlebutton.maximize {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-maximize-dark.png"), url("windows-assets/titlebutton-maximize-dark@2.png"));
-}
-
-headerbar button.titlebutton.maximize:backdrop, .titlebar button.titlebutton.maximize:backdrop {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-maximize-backdrop-dark.png"), url("windows-assets/titlebutton-maximize-backdrop-dark@2.png"));
-}
-
-headerbar button.titlebutton.maximize:hover, .titlebar button.titlebutton.maximize:hover {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-maximize-hover-dark.png"), url("windows-assets/titlebutton-maximize-hover-dark@2.png"));
-}
-
-headerbar button.titlebutton.maximize:active, .titlebar button.titlebutton.maximize:active {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-maximize-active-dark.png"), url("windows-assets/titlebutton-maximize-active-dark@2.png"));
-}
-
-headerbar button.titlebutton.minimize, .titlebar button.titlebutton.minimize {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-minimize-dark.png"), url("windows-assets/titlebutton-minimize-dark@2.png"));
-}
-
-headerbar button.titlebutton.minimize:backdrop, .titlebar button.titlebutton.minimize:backdrop {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-minimize-backdrop-dark.png"), url("windows-assets/titlebutton-minimize-backdrop-dark@2.png"));
-}
-
-headerbar button.titlebutton.minimize:hover, .titlebar button.titlebutton.minimize:hover {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-minimize-hover-dark.png"), url("windows-assets/titlebutton-minimize-hover-dark@2.png"));
-}
-
-headerbar button.titlebutton.minimize:active, .titlebar button.titlebutton.minimize:active {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-minimize-active-dark.png"), url("windows-assets/titlebutton-minimize-active-dark@2.png"));
-}
-
-headerbar button.titlebutton.restore, .titlebar button.titlebutton.restore {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-restore-dark.png"), url("windows-assets/titlebutton-restore-dark@2.png"));
-}
-
-headerbar button.titlebutton.restore:backdrop, .titlebar button.titlebutton.restore:backdrop {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-restore-backdrop-dark.png"), url("windows-assets/titlebutton-restore-backdrop-dark@2.png"));
-}
-
-headerbar button.titlebutton.restore:hover, .titlebar button.titlebutton.restore:hover {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-restore-hover-dark.png"), url("windows-assets/titlebutton-restore-hover-dark@2.png"));
-}
-
-headerbar button.titlebutton.restore:active, .titlebar button.titlebutton.restore:active {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-restore-active-dark.png"), url("windows-assets/titlebutton-restore-active-dark@2.png"));
-}
-
-.fullscreen headerbar button.titlebutton.maximize, .fullscreen .titlebar button.titlebutton.maximize,
-.maximized headerbar button.titlebutton.maximize,
-.maximized .titlebar button.titlebutton.maximize {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-restore-dark.png"), url("windows-assets/titlebutton-restore-dark@2.png"));
-}
-
-.fullscreen headerbar button.titlebutton.maximize:backdrop, .fullscreen .titlebar button.titlebutton.maximize:backdrop,
-.maximized headerbar button.titlebutton.maximize:backdrop,
-.maximized .titlebar button.titlebutton.maximize:backdrop {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-restore-backdrop-dark.png"), url("windows-assets/titlebutton-restore-backdrop-dark@2.png"));
-}
-
-.fullscreen headerbar button.titlebutton.maximize:hover, .fullscreen .titlebar button.titlebutton.maximize:hover,
-.maximized headerbar button.titlebutton.maximize:hover,
-.maximized .titlebar button.titlebutton.maximize:hover {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-restore-hover-dark.png"), url("windows-assets/titlebutton-restore-hover-dark@2.png"));
-}
-
-.fullscreen headerbar button.titlebutton.maximize:active, .fullscreen .titlebar button.titlebutton.maximize:active,
-.maximized headerbar button.titlebutton.maximize:active,
-.maximized .titlebar button.titlebutton.maximize:active {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-restore-active-dark.png"), url("windows-assets/titlebutton-restore-active-dark@2.png"));
-}
-
 /**********************
  * Touch Copy & Paste *
  *********************/
